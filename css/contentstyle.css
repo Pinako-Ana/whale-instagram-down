@@ -1,0 +1,19 @@
+.HP0qD {
+  display: none !important;
+}
+.extension-download-btn {
+  z-index: 1000;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #b8b8b8;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.extension-download-btn:hover {
+  background: #eee;
+}

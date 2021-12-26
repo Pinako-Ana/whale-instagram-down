@@ -1,0 +1,20 @@
+{
+  "name": "mywhaleapp",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "dev:ex": "vite build --watch",
+    "build": "vite build",
+    "build:ex": "bestzip dist.zip dist/",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.0",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.0.0",
+    "bestzip": "^2.2.0",
+    "vite": "^2.7.2"
+  }
+}

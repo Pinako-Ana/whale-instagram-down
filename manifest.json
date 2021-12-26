@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "myFirstWhaleApp",
+  "description": "download instagram photo",
+  "version": "1.0.1",
+  "icons": {
+    "16": "images/whale16.png",
+    "48": "images/whale48.png",
+    "128": "images/whale128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.instagram.com/*",
+        "http://www.instagram.com/*"
+      ],
+      "css": [
+        "css/contentstyle.css"
+      ],
+      "js": [
+        "js/contentscript.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "script": [
+      "js/background.js"
+    ]
+  },
+  "sidebar_action": {
+    "default_icon": {
+      "16": "images/whale16.png",
+      "48": "images/whale48.png",
+      "128": "images/whale128.png"
+    },
+    "default_page": "index.html"
+  },
+  "permissions": [
+    "<all_urls>",
+    "webRequest"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
